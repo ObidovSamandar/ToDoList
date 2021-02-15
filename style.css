@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600&display=swap');
+
+*,*::before,*::after{
+	margin:0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+
+body{
+	font-family: 'Poppins', sans-serif;
+	background-image: linear-gradient(120deg, #5f57d1, #c065c0);
+	color: #fff;
+	min-height: 100vh;
+}
+
+h3{
+	font-size: 30px;
+	font-weight:500;
+	text-transform: uppercase;
+	text-align: center;
+	margin:25px 0 0px 0;
+}
+
+input{
+	outline: none;
+	border: none;
+	font-size: 17px;
+	padding: 0 7px;
+	width: 100%;
+	height: 100%;
+
+}
+
+ul{
+	list-style: none;
+}
+
+.wrapper{
+	display: flex;
+	justify-content: center;
+}
+
+.addItem-wrapper{
+	display: flex;
+	flex-basis: 405px;
+	justify-content: space-between;
+	margin-bottom: 20px;
+}
+
+.input-wrapper{
+	display: flex;
+	align-items: center;
+	height: 35px;
+	line-height: 35px;
+	background-color: #fff;
+	flex-basis: 80%;
+}
+
+
+
+i.fas.fa-microphone{
+	color: #000;
+	font-size: 20px;
+	cursor: pointer;
+	margin-right: 10px;
+}
+
+
+i.fas.fa-microphone:active{
+	color: #c065c0;
+}
+#addBtn{
+	outline: none;
+	border: none;
+	cursor: pointer;
+	padding: 0 15px;
+	border-radius: 5px;
+	color: #fff;
+	background-color: #c065c0;
+	font-weight: 700;
+	margin-left: 10px;
+}
+
+#addBtn:active{
+	background-color: #fff;
+	color: #c065c0;
+}
+
+
+.addedWorks-wrapper{
+	display: flex;
+	justify-content: center;
+}
+
+
+.worksList{
+	width: 405px;
+}
+
+.worksList li{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 5px 7px;
+	background-color: #fff;
+	color: #000;
+	margin-bottom: 10px;
+}
+
+
+i#deleteBtn{
+	cursor: pointer;
+	background: #ff3700;
+	width: 25px;
+	height: 25px;
+	line-height: 25px;
+	text-align: center;
+	color: #fff;
+	font-size: 15px;
+}
+
+i#deleteBtn:active{
+	background-color: green;
+
+}
+
+.date{
+	margin-right: 15px;
+}
+
+.alert{
+	width: 150px;
+	height: 33px;
+	margin: 0 auto 10px auto;
+	text-align: center;
+	padding: 5px;
+	opacity: 0;
+	font-size: 15px;
+	transition: all ease .4s;
+}
+
+
+@media(max-width: 576px){
+	.worksList li{
+		font-size: 15px;
+	}
+	.addItem-wrapper{
+		flex-basis: 320px;
+	}
+	.worksList{
+		width: 320px;
+	}
+}
